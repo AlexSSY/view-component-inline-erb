@@ -1,0 +1,25 @@
+{
+  "name": "view-component-inline-erb",
+  "displayName": "View Component Inline ERB",
+  "description": "no dex",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "ruby",
+      "aliases": ["Ruby", "ruby"],
+      "extensions": [".ruby",".rb"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "ruby",
+      "scopeName": "source.ruby",
+      "path": "./syntaxes/ruby.tmLanguage.json"
+    }]
+  }
+}
