@@ -1,0 +1,24 @@
+{
+    "scopeName": "erb.injection",
+    "injectionSelector": "L:string.unquoted.heredoc.ruby",
+    "patterns": [
+        {
+            "include": "text.html.erb"
+        },
+        {
+            "include": "meta.embedded.line.erb"
+        }
+    ],
+    "repository": {
+        "html-block": {
+            "contentName": "meta.embedded.erb",
+            "begin": "(?<=~ERB)",
+            "end": "(?=ERB)",
+            "patterns": [
+                {
+                    "include": "text.html.erb"
+                }
+            ]
+        }
+    }
+}
